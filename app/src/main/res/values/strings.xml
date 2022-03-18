@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Usell Up</string>
+    <string name="title_activity_main_bottom_nav">MainBottomNavActivity</string>
+    <string name="title_stack">Stack</string>
+    <string name="title_store">Store</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_navigation">Navigation</string>
+    <string name="title_favourites">Favourites</string>
+
+    <string name="text_best_practice">Best practice Definition &amp; Meaning</string>
+    <string name="head_til_1">HEAD TIL 1</string>
+    <string name="head_til_2">HEAD TIL 2</string>
+    <string name="head_til_3">HEAD TIL 3</string>
+    <string name="head_til_4">HEAD TIL 4</string>
+    <string name="shop">SHOP</string>
+    <string name="best_title">#BEST_TITLE</string>
+    <string name="top_title">#TOP_TITLE</string>
+    <string name="shop_by_category">#SHOP BY CATEGORY</string>
+    <string name="view_all">View All</string>
+    <string name="todo">TODO</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="terms_of_use">TERMS OF USE</string>
+    <string name="contact">CONTACT</string>
+    <string name="career">CAREER</string>
+    <string name="area_change">AREA CHANGE</string>
+    <string name="project_by">PROJECT BY</string>
+    <string name="ezeness_technology">EZENESS TECHNOLOGY</string>
+    <string name="search">Search</string>
+    <string name="main_category1">Main\nCategory1</string>
+
+</resources>

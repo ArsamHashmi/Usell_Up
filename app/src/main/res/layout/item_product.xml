@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_180sdp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintWidth_max="@dimen/_160sdp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="@dimen/_5sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                >
+                <ImageView
+                    android:id="@+id/imv_product_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/product_red_shirt"
+                    android:padding="@dimen/_5sdp"
+                    android:contentDescription="@string/todo" />
+
+                <com.like.LikeButton
+                    app:icon_type="heart"
+                    app:icon_size="25dp"
+                    android:id="@+id/btn_like"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="end"
+                    />
+
+                <View
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:weightSum="10"
+                    >
+                    <com.willy.ratingbar.ScaleRatingBar
+                        android:id="@+id/simpleRatingBar"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="7"
+                        app:srb_numStars="5"
+                        app:srb_minimumStars="1"
+                        app:srb_starWidth="@dimen/_10sdp"
+                        app:srb_starHeight="@dimen/_10sdp"
+                        app:srb_starPadding="0dp"
+                        app:srb_clearRatingEnabled="true"
+                        >
+                    </com.willy.ratingbar.ScaleRatingBar>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_distance"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="0dp"
+                    android:insetBottom="0dp"
+                    android:insetTop="0dp"
+                    android:textSize="@dimen/_7sdp"
+                    app:cornerRadius="@dimen/_5sdp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    app:backgroundTint="@color/black"
+                    android:alpha="0.5"
+                    android:textColor="@color/white"/>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:layout_gravity="bottom"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_price_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorGrayDark"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_slider_price_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_product_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_percent_price_off"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/rounded_corners"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7sdp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

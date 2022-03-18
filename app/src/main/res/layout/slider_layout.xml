@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    >
+
+    <!--Image we will display in our slider view-->
+    <ImageView
+        android:id="@+id/imv_slider_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="bottom"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_slider_price_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/tv_slider_price_old"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorGrayDark"
+            android:layout_toStartOf="@id/tv_percent_price_off"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/tv_percent_price_off"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:gravity="center"
+            android:background="@drawable/rounded_corners"
+            android:textColor="@color/white"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

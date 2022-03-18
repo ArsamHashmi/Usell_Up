@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_stack"
+        android:name="com.example.usellup.ui.stack.StackFragment"
+        tools:layout="@layout/fragment_stack" />
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.example.usellup.ui.store.StoreFragment"
+        tools:layout="@layout/fragment_store" />
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.usellup.ui.dashboard.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/navigation_navigation"
+        android:name="com.example.usellup.ui.navigation.NavigationFragment"
+        tools:layout="@layout/fragment_navigation" />
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.example.usellup.ui.favourites.FavouritesFragment"
+        tools:layout="@layout/fragment_favourites" />
+
+</navigation>

@@ -8,5 +8,5 @@
         Tested screen resolutions include following:
                  HD+      (1480 x 720)
                  FHD      (1920 x 1080)
-                 FHD+    (2220 x 1080)
-                 WQHD (2960 x 1440)
+                 FHD+     (2220 x 1080)
+                 WQHD     (2960 x 1440)
